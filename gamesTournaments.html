@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="icons/beeicon-font.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/slick-theme.css">
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/disable-rightClick-onImage.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.slider-nav').slick({
+					slidesToShow: 4,
+					asNavFor: '.slider-for',
+					focusOnSelect: false,
+					responsive: [
+						{
+							breakpoint: 767,
+							settings: {
+							slidesToShow: 2,
+							infinite: true
+							}
+						}
+					]
+				});
+			});
+		</script>
+	</head>
+	<body class="im-games-list-ins">
+		<div class="im-games-tournaments">
+			<div class="container main-container">
+				<div class="row">
+					<div class="col-sm-12 col-xs-12 im-games-tournaments-slider">
+						<div class="main">
+							<div class="slider slider-nav">
+								<div class="slider-nav-cont">
+									<img src="img/new-images/pubg-3x.jpg" alt="2"/>
+								</div>
+								<div class="slider-nav-cont">
+									<img src="img/new-images/pubg-3x.jpg" alt="3"/>
+								</div>
+								<div class="slider-nav-cont">
+									<img src="img/new-images/pubg-3x.jpg" alt="4"/>
+								</div>
+								<div class="slider-nav-cont">
+									<img src="img/new-images/pubg-3x.jpg" alt="5"/>
+								</div>
+								<div class="slider-nav-cont">
+									<img src="img/new-images/pubg-3x.jpg" alt="6"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12 im-games-tournaments-header">
+						<div class="im-games-tournaments-headerText">Pubg Tournaments</div>
+						<div class="im-games-tournaments-headerMatch"><button id="prevMatch" type="button">PREVIOUS MATCHED</button></div>
+					</div>
+				</div><br>
+				<div class="row back-details">
+					<div class="col-sm-12 col-xs-12 im-games-tournaments-date">Today, August 25, 2019</div>
+				</div>
+				<div class="row margins-cont">
+					<div class="col-sm-12 col-xs-12 im-games-tournaments-details">
+						<div class="col-sm-7 col-xs-7">
+							<div class="im-games-tournaments-detailsProf-parent">
+								<div class="im-games-tournaments-detailsProfImg"><img src="img/new-images/pubg-3x.jpg" alt=""></div>
+								<div class="im-games-tournaments-detailsProfile">
+									<div class="im-games-tournaments-detailsProfText">Mad Hunter</div>
+									<div class="im-games-tournaments-detailsProfDes">HOST</div>
+								</div>
+							</div>
+							<div class="im-games-tournaments-detailsShare">
+								<a href="javscript:;" id="share-now"><img src="img/new-images/whatsapp-img.jpg" alt="">SHARE</a>
+							</div>
+							<div class="im-games-tournaments-detailsPlay">
+								<a href="javscript:;" id="play-now">PLAY NOW</a>
+							</div>
+						</div>
+						<div class="col-sm-5 col-xs-5 im-games-tournaments-details-FeesParent">
+							<div class="im-games-tournaments-detailsFee">₹20</div>
+							<div class="im-games-tournaments-detailsFeeText">ENTRY FEE</div><br>
+							<div class="im-games-tournaments-detailsTime">07:00 <br>PM<span>IST</span></div>
+							<div class="im-games-tournaments-detailsTeams">SQUAD</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

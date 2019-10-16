@@ -1,0 +1,139 @@
+/*! media_query_xs.less */
+@media only screen and (max-width : 767px) {
+
+.fullWidth(@direction,@size){
+	float: @direction;
+	width: @size;
+}
+.nav-up{
+	top: -109px!important;
+}
+.navbar-header.im-mobile {
+	.im-logo-search{
+		.fullWidth(left,100%);
+		.navbar-brand{
+			.fullWidth(left,50%);
+		}
+		.im-search-icon{
+			float: left;
+			width: 50%;
+			position: relative;
+			height: 50px;
+			text-align: right;
+			padding-right: 10px;
+			.bee-icon-search.search-icon{
+				display: block;
+				position: relative;
+				font-size: 22px;
+				color: #fff;
+				right: 94px;
+				top: 14px;
+				cursor: pointer;
+			}
+			#im-search_btn{
+				display: block;
+				border-radius: 6px;
+				border: none;
+				padding: 0 10px;
+				top: 10px;
+				position: absolute;
+				height: 30px;
+				background: #fff;
+				right: 14px;
+			}
+		}
+		.navbar-form.navbar-left{
+			.fullWidth(left,100%);
+			border: none;
+			box-shadow: none;
+			margin: 0;
+			display: -webkit-box; 
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex; 
+			display: flex;
+			.form-group{
+				width: 70%;
+				margin-right: 10px;
+			}
+			#im-search_btn{
+				width: 30%;
+				border: none;
+				background: #fff;
+				border-radius: 4px;
+				height: 34px;
+				font-size: 14px;
+			}
+		}
+	}
+	.im-search-btn-mobile{
+		.fullWidth(left,100%);
+		.search-wrap{
+			display: block;
+			.input-search-box.activated{
+				position: relative;
+				top: 0;
+				width: 100%;
+				height: 36px;
+				border: none;
+				border-radius: 30px;
+				background: #fff;
+			}
+		}
+	}
+}
+
+/**********Email Verification************/
+.im-email-verification, .im-forgot-password{
+    text-align: center;
+}
+.im-forgot-password{
+    .im-email-content{
+    	.im-email-content-text{
+    		text-align: justify;
+    	}
+    }
+}
+/**********Email Verification************/
+
+/**********Wallet************/
+.im-wallet-update{
+	.im-wallet-update-coins-textHold{
+		text-align: right;
+	}
+	.im-wallet-update-upibtns{
+		.im-wallet-update-upi-btn, .im-wallet-update-payBtns{
+			a{
+				top:-2px;
+			}
+		}
+	}
+}
+
+
+/**********Wallet************/
+
+/*********UPI ID*************/
+#im-wallet-update-upiForm{
+	display: block;
+	.buttonHolder{
+		margin-top: 10px
+	}
+}
+/*********UPI ID*************/
+
+/**********Setting************/
+.im-setting{
+	.im-setting-logout{
+		padding-left: 15px;
+		button[type="submit"]{
+			width: 100%;
+		}
+	}
+}
+
+
+/**********Setting************/
+
+
+}
