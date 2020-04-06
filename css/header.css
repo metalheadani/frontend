@@ -1,0 +1,403 @@
+body {
+  font-family: Roboto;
+  background-color: #939393;
+  background: #f7f8f9;
+}
+
+.navbar.navbar-theme {
+  background: var(--theme-color);
+  border-radius: 0;
+  border: none;
+  position: sticky;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+  z-index: 1000;
+}
+.nav-up {
+  top: -54px !important;
+}
+.navbar-default.navbar-theme .navbar-nav > li > a {
+  color: #fff;
+  font-size: 22px;
+  margin-left: 15px;
+}
+
+.btn.navbar-btn {
+  background: #fff;
+  color: #742ceb;
+  padding: 6px 37px;
+  border-radius: 40px;
+  margin-left: 20px;
+}
+.btn.navbar-btn .bee-icon-plus-sign-curcle-o:before {
+  top: 2px;
+  position: relative;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+  border: none;
+  color: #fff;
+  font-size: 25px;
+  padding: 0;
+}
+
+.navbar-toggle .search-wrap {
+  color: #ffffff;
+}
+.navbar-toggle .input-search-box {
+  top: -4px;
+  right: -10px;
+  width: 230px;
+}
+
+.navbar-brand i {
+  color: #fff;
+  font-size: 25px;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+
+.navbar-header.im-mobile .im-logo-search .im-search-icon .bee-icon-search.search-icon {
+  display: none;
+}
+.navbar-header.im-mobile .im-logo-search .im-search-icon #im-search_btn {
+  display: none;
+}
+.navbar-header.im-mobile .im-logo-search .navbar-form.navbar-left {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.navbar-header.im-mobile .im-logo-search .navbar-form.navbar-left .form-group {
+  margin-right: 10px;
+}
+.navbar-header.im-mobile .im-logo-search .navbar-form.navbar-left #im-search_btn {
+  width: auto;
+  border: none;
+  background: #fff;
+  border-radius: 4px;
+  height: 34px;
+  font-size: 14px;
+}
+.navbar-header.im-mobile .im-logo-search #sample {
+  border: none !important;
+}
+.navbar-header.im-mobile .im-logo-search #sample .nav.navbar-nav li {
+  display: table-cell !important;
+}
+.navbar-header.im-mobile .im-search-btn-mobile .search-wrap {
+  display: none;
+}
+#navbar-sample .nav.navbar-nav.navbar-right .bee-icon-cogwheel-o:before {
+  color: #ffffff;
+}
+
+.header-new {
+  position: sticky;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+  z-index: 1000;
+  background: #FFFFFF;
+  height: 62px;
+  text-align: center;
+  border-radius: 0;
+  border: none;
+}
+.header-new .navbar-header .navbar-toggle {
+  position: absolute;
+  left: 6px;
+  top: 8px;
+  border: none;
+}
+.header-new .navbar-header .navbar-toggle:hover,
+.header-new .navbar-header .navbar-toggle:focus {
+  background: none;
+}
+.header-new .navbar-header .logo-n {
+  position: relative;
+  font-size: 18px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  top: 21px;
+}
+.header-new .navbar-header .logo-n a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.header-new .navbar-header .loginParentMobile {
+  display: none;
+}
+.header-new #myNavbar {
+  border: none;
+  box-shadow: none;
+}
+.header-new #myNavbar.overlay-cont {
+  height: auto;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  background-color: none;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.header-new #myNavbar .nav.navbar-nav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-evenly;
+  width: 98%;
+  height: 62px;
+  padding-top: 3px;
+}
+.header-new #myNavbar .nav.navbar-nav li a {
+  background: transparent;
+  text-align: left;
+  color: #ffffff;
+}
+.header-new #myNavbar .closebtn {
+  display: none;
+  padding: 8px;
+  text-decoration: none;
+  color: #818181;
+  transition: .3s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  font-size: 32px;
+}
+.header-new #myNavbar .nav.navbar-nav {
+  padding-left: 30px;
+}
+.header-new .bell-icon-n {
+  position: absolute;
+  right: 16px;
+  top: 21px;
+}
+
+/*! media_query_xs.less */@media only screen and (max-width: 767px) {
+  .nav-up {
+    top: -109px !important;
+  }
+.navbar-header.im-mobile .im-logo-search {
+    float: left;
+    width: 100%;
+  }
+  .navbar-header.im-mobile .im-logo-search .navbar-brand {
+    float: left;
+    width: 50%;
+  }
+  .navbar-header.im-mobile .im-logo-search .im-search-icon {
+    float: left;
+    width: 50%;
+    position: relative;
+    height: 50px;
+    text-align: right;
+    padding-right: 10px;
+  }
+  .navbar-header.im-mobile .im-logo-search .im-search-icon .bee-icon-search.search-icon {
+    display: block;
+    position: relative;
+    font-size: 22px;
+    color: #fff;
+    right: 94px;
+    top: 14px;
+    cursor: pointer;
+  }
+  .navbar-header.im-mobile .im-logo-search .im-search-icon #im-search_btn {
+    display: block;
+    border-radius: 6px;
+    border: none;
+    padding: 0 10px;
+    top: 10px;
+    position: absolute;
+    height: 30px;
+    background: #fff;
+    right: 14px;
+  }
+  .navbar-header.im-mobile .im-logo-search .navbar-form.navbar-left {
+    float: left;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+  .navbar-header.im-mobile .im-logo-search .navbar-form.navbar-left .form-group {
+    width: 70%;
+    margin-right: 10px;
+  }
+  .navbar-header.im-mobile .im-logo-search .navbar-form.navbar-left #im-search_btn {
+    width: 30%;
+    border: none;
+    background: #fff;
+    border-radius: 4px;
+    height: 34px;
+    font-size: 14px;
+  }
+  .navbar-header.im-mobile .im-logo-search .navbar-header-cont .navbar-toggle {
+    margin-top: 16px !important;
+  }
+  .navbar-header.im-mobile .im-logo-search .navbar-header-cont .navbar-toggle .icon-bar {
+    background-color: #ffffff !important;
+  }
+  .navbar-header.im-mobile .im-search-btn-mobile {
+    float: left;
+    width: 100%;
+  }
+  .navbar-header.im-mobile .im-search-btn-mobile .search-wrap {
+    display: block;
+  }
+  .navbar-header.im-mobile .im-search-btn-mobile .search-wrap .input-search-box.activated {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 36px;
+    border: none;
+    border-radius: 30px;
+    background: #ffffff;
+  }
+
+  .navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #6b4dc4;
+
+  }
+
+/* .header-new .container-fluid .navbar-header .navbar-toggle .icon-bar {
+  color: #6b4dc4;
+} */
+
+  .header-new .navbar-header .logo-n {
+    position: relative;
+    font-size: 18px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    top: 21px;
+  }
+  .header-new .navbar-header .logo-n a {
+    color: #6b4dc4;
+    text-decoration: none;
+  }
+  .header-new #myNavbar {
+    border: none;
+    box-shadow: none;
+  }
+  .header-new #myNavbar.overlay-cont {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .header-new #myNavbar .nav.navbar-nav {
+    display: block;
+    width: auto;
+  }
+  .header-new #myNavbar .nav.navbar-nav li a {
+    background: transparent;
+    text-align: left;
+    color: #9d9d9d;
+  }
+  .header-new #myNavbar .nav.navbar-nav li a:hover,
+  .header-new #myNavbar .nav.navbar-nav li a:focus {
+    color: #ffffff;
+  }
+  .header-new #myNavbar .closebtn {
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: .3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 32px;
+  }
+  .header-new #myNavbar .nav.navbar-nav {
+    padding-left: 30px;
+  }
+  .header-new .bell-icon-n {
+    position: absolute;
+    right: 16px;
+    top: 21px;
+  }
+  .im-games-tournaments-slider .main .slider.slider-nav .slick-prev.slick-arrow {
+    left: -18px;
+    z-index: 1;
+  }
+  .im-games-tournaments-slider .main .slider.slider-nav .slick-next.slick-arrow {
+    right: -15px;
+    z-index: 1;
+  }
+  .header-new .navbar-header .loginParentMobile {
+    display: block !important;
+    position: absolute;
+    right: 15px;
+    top: 18px;
+  }
+  .header-new .navbar-header .loginParentMobile .loginMobile a {
+    font-size: 18px;
+    margin-right: 14px;
+    color: #ffffff !important;
+  }
+  .header-new .navbar-header .loginParentMobile .signUpMobile a {
+    font-size: 18px;
+    color: #ffffff !important;
+  }
+}
+/*! media_query_sm.less*/@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar-header.im-mobile .im-logo-search #sample {
+    display: none !important;
+  }
+  .im-games-content .im-games-content-contents,
+  .im-games-content-view .im-games-content-contents {
+    width: 30%;
+  }
+}
+
+.search-wrap .search-icon.active {
+  color: var(--theme-color);
+}
+.custom-file-input:active {
+  outline: 0;
+}
+.web-nav li a.active {
+  color: var(--theme-color);
+}
+.im-games-profile .main-container .im-games-tournaments-fees-parent .im-games-tournaments-team-fees-btn a #pay-now:active {
+  position: relative;
+  top: 3px;
+}
+
